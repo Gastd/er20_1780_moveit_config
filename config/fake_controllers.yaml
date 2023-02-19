@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_er20_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - shoulder_yaw
+      - shoulder_pitch
+      - elbow_pitch
+      - wrist_roll
+      - wrist_pitch
+      - wrist_yaw
+initial:  # Define initial robot poses.
+  - group: er20_arm
+    pose: home
